@@ -1,0 +1,59 @@
+{
+    "name": "sitewards/webappmanifest",
+    "description": "Web application manifest implementation for Magento",
+    "type": "magento-module",
+    "homepage": "https://github.com/sitewards/magento-webappmanifest.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Hartmann",
+            "email": "mail@sitewards.com",
+            "homepage": "https://www.sitewards.com/",
+            "role": "Developer"
+        },
+        {
+            "name": "Patrick Kubica",
+            "email": "mail@sitewards.com",
+            "homepage": "https://www.sitewards.com/",
+            "role": "Developer"
+        },
+        {
+            "name": "Andrew Howden",
+            "email": "mail@sitewards.com",
+            "homepage": "https://www.sitewards.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "mail@sitewards.com",
+        "issues": "https://github.com/sitewards/magento-webappmanifest.git/issues",
+        "wiki": "https://github.com/sitewards/magento-webappmanifest.git/wiki",
+        "source": "https://github.com/sitewards/magento-webappmanifest.git"
+    }, 
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "conflict": {
+    },
+    "archive": {
+        "exclude": [
+            "test",
+            "hack",
+            "hooks",
+            ".arclint"
+        ]
+    },
+    "config": {
+        "bin-dir":             "bin",
+        "store-auths":         false,
+        "optimize-autoloader": true,
+        "sort-packages":       true,
+        "apcu-autoloader":     true,
+        "notify-on-install":   false
+    },
+    "minimum-stability": "stable"
+}
