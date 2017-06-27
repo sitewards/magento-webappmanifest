@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Web application manifest implementation for Magento 1.x
+
+@category    Sitewards
+@package     Sitewards_Webappmanifest
+@copyright   Copyright (c) Sitewards GmbH (http://www.sitewards.com)
+@contact     mail@sitewards.com
+-->
+<config>
+    <modules>
+        <Sitewards_Webappmanifest>
+            <version>1.0.0</version>
+        </Sitewards_Webappmanifest>
+    </modules>
+    <global>
+        <helpers>
+            <sitewards_webappmanifest>
+                <class>Sitewards_Webappmanifest_Helper</class>
+            </sitewards_webappmanifest>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <sitewards_webappmanifest>
+                    <file>sitewards/webappmanifest.xml</file>
+                </sitewards_webappmanifest>
+            </updates>
+        </layout>
+    </frontend>
+    <!-- Todo: Specify the default values for the web app manifest here. At the moment, there are no values, but it
+         will be highly configurable, and storing this XML node here does no harm. -->
+    <default>
+        <sitewards_webappmanifest>
+            <export>
+                <batch_size>100</batch_size>
+            </export>
+        </sitewards_webappmanifest>
+    </default>
+</config>
