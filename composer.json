@@ -1,5 +1,5 @@
 {
-    "name": "sitewards/webappmanifest",
+    "name": "sitewards/magento-webappmanifest",
     "description": "Web application manifest implementation for Magento",
     "type": "magento-module",
     "homepage": "https://github.com/sitewards/magento-webappmanifest.git",
