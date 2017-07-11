@@ -42,7 +42,41 @@ Coming soon!
 Installation instruction
 ------------------------
 
-You can't, just yet.
+Installation is managed through Composer. This is the only supported method, and requires the excellent Magento
+Composer Installer by Cotya (or another similar tool):
+
+  https://github.com/Cotya/magento-composer-installer
+
+Once this has been installed, you can undertake the following steps:
+
+1. Add the git repository to the "repository" section of composer.json:
+
+```
+    {
+        // Other composer.json stuff
+        "repositories": [
+            {
+                "type": "vcs",
+                "url": "git@github.com:sitewards/magento-webappmanifest.git"
+            }
+        ]
+    }
+```
+
+2. Once you have completed this, you can require the module:
+
+```
+    composer require sitewards/magento-webappmanifest
+```
+
+This will install the most recent version. That's it! You're all up to date. Note: At the time of writing, there are
+no stable releases. Thus, you might have to use:
+
+```
+    composer require sitewards/magento-webappmanifest dev-master
+```
+
+This is not production ready; when it is, it will be tagged, and you will be able to lock the version in composer.
 
 contact: mail@sitewards.com
 web:     http://www.sitewards.com
