@@ -12,7 +12,7 @@ class Sitewards_Webappmanifest_Model_Manifest extends Mage_Core_Model_Abstract
     public function getManifestJson()
     {
         return Zend_Json_Encoder::encode([
-            'name'      => 'whatever',
+            'name'      => Mage::getStoreConfig('general/store_information/name'),
             'start_url' => '/',
         ]);
     }
