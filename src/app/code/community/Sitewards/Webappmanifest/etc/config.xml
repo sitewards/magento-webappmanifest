@@ -14,6 +14,11 @@ Web application manifest implementation for Magento 1.x
         </Sitewards_Webappmanifest>
     </modules>
     <global>
+        <models>
+            <sitewards_webappmanifest>
+                <class>Sitewards_Webappmanifest_Model</class>
+            </sitewards_webappmanifest>
+        </models>
         <helpers>
             <sitewards_webappmanifest>
                 <class>Sitewards_Webappmanifest_Helper</class>
@@ -28,6 +33,15 @@ Web application manifest implementation for Magento 1.x
                 </sitewards_webappmanifest>
             </updates>
         </layout>
+        <routers>
+            <webappmanifest>
+                <use>standard</use>
+                <args>
+                    <module>Sitewards_Webappmanifest</module>
+                    <frontName>manifest.json</frontName>
+                </args>
+            </webappmanifest>
+        </routers>
     </frontend>
     <!-- Todo: Specify the default values for the web app manifest here. At the moment, there are no values, but it
          will be highly configurable, and storing this XML node here does no harm. -->
