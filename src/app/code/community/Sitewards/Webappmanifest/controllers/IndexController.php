@@ -18,6 +18,6 @@ class Sitewards_Webappmanifest_IndexController extends Mage_Core_Controller_Fron
         /** @var Mage_Core_Controller_Response_Http $oResponse */
         $oResponse = $this->getResponse();
         $oResponse->setHeader('Content-type', 'text/json');
-        $oResponse->setBody($oManifestModel->getManifestJson());
+        $oResponse->setBody(json_encode($oManifestModel));
     }
 }
