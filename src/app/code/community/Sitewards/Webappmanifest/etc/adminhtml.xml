@@ -17,7 +17,7 @@ Web application manifest implementation for Magento 1.x
                             <config>
                                 <children>
                                     <webappmanifest>
-                                        <title>Sitewards - Web-App Manifest Configuration</title>
+                                        <title>Sitewards - PWA Configuration</title>
                                     </webappmanifest>
                                 </children>
                             </config>
