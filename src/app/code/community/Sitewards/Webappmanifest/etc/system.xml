@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <webappmanifest translate="label">
+            <label>Web-App Manifest Configuration</label>
+            <sort_order>1000</sort_order>
+        </webappmanifest>
+    </tabs>
+    <sections>
+        <webappmanifest translate="label">
+            <label>Configure Sitewards WebappManifest</label>
+            <tab>webappmanifest</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings translate="label">
+                    <label>Configure Sitewards WebappManifest</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <base_setting translate="label">
+                            <label>base setting</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </base_setting>
+                    </fields>
+                </settings>
+            </groups>
+        </webappmanifest>
+    </sections>
+</config>
