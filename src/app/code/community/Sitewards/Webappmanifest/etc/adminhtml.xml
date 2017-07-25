@@ -1,4 +1,12 @@
 <?xml version="1.0"?>
+<!--
+Web application manifest implementation for Magento 1.x
+
+@category    Sitewards
+@package     Sitewards_Webappmanifest
+@copyright   Copyright (c) Sitewards GmbH (http://www.sitewards.com)
+@contact     mail@sitewards.com
+-->
 <config>
     <acl>
         <resources>

@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Web application manifest implementation for Magento 1.x
+
+@category    Sitewards
+@package     Sitewards_Webappmanifest
+@copyright   Copyright (c) Sitewards GmbH (http://www.sitewards.com)
+@contact     mail@sitewards.com
+-->
 <config>
     <tabs>
         <webappmanifest translate="label">
-            <label>Web-App Manifest Configuration</label>
+            <label>PWA</label>
             <sort_order>1000</sort_order>
         </webappmanifest>
     </tabs>
     <sections>
         <webappmanifest translate="label">
-            <label>Configure Sitewards WebappManifest</label>
+            <label>Sitewards WebappManifest</label>
             <tab>webappmanifest</tab>
             <sort_order>1000</sort_order>
             <show_in_default>1</show_in_default>
@@ -16,7 +24,7 @@
             <show_in_store>1</show_in_store>
             <groups>
                 <settings translate="label">
-                    <label>Configure Sitewards WebappManifest</label>
+                    <label>Sitewards WebappManifest</label>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
