@@ -14,5 +14,6 @@
  */
 class Sitewards_Webappmanifest_Helper_Data extends Mage_Core_Helper_Abstract
 {
+    const S_XML_PATH_SITEWARDS_WEBAPPMANIFEST_DISPLAY = 'webappmanifest/settings/display';
 }
 
