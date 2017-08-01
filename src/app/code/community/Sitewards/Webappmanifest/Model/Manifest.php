@@ -31,8 +31,13 @@ class Sitewards_Webappmanifest_Model_Manifest extends Mage_Core_Model_Abstract i
     private function loadConfigurableOptions()
     {
         $aSettings = Mage::getStoreConfig('webappmanifest/settings');
-        foreach ($aSettings as $sKey => $sSetting) {
-            $this->aManifestData[$sKey] = $sSetting;
+        foreach ($aSettings as $sKey => $mSetting) {
+            if (!is_array($mSetting)) {
+                $this->aManifestData[$sKey] = $mSetting;
+                continue;
+            }
+
+            $this->aManifestData[$sKey] = array_values($mSetting);
         }
     }
 
