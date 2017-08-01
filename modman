@@ -1,5 +1,5 @@
-src/app/etc/modules/Sitewards_Webappmanifest.xml                     app/etc/modules/Sitewards_Webappmanifest.xml
-src/app/code/community/Sitewards/Webappmanifest                      app/code/community/Sitewards/Webappmanifest
-src/app/locale/de_DE/Sitewards_Webappmanifest.csv                    app/locale/de_DE/Sitewards_Webappmanifest.csv
-src/skin/frontend/base/default/images/sitewards/webappmanifest       skin/frontend/base/default/images/sitewards/webappmanifest
-app/design/frontend/base/default/layout/sitewards/webappmanifest.xml app/design/frontend/base/default/layout/sitewards/webappmanifest.xml
+src/app/etc/modules/Sitewards_Webappmanifest.xml                         app/etc/modules/Sitewards_Webappmanifest.xml
+src/app/code/community/Sitewards/Webappmanifest                          app/code/community/Sitewards/Webappmanifest
+src/app/locale/de_DE/Sitewards_Webappmanifest.csv                        app/locale/de_DE/Sitewards_Webappmanifest.csv
+src/skin/frontend/base/default/images/sitewards/webappmanifest           skin/frontend/base/default/images/sitewards/webappmanifest
+src/app/design/frontend/base/default/layout/sitewards/webappmanifest.xml app/design/frontend/base/default/layout/sitewards/webappmanifest.xml

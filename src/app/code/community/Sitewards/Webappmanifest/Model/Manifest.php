@@ -15,7 +15,7 @@ class Sitewards_Webappmanifest_Model_Manifest extends Mage_Core_Model_Abstract i
     /**
      * Sitewards_Webappmanifest_Model_Manifest constructor.
      */
-    public function __construct()
+    protected function _construct()
     {
         $this->aManifestData['name']             = Mage::getStoreConfig('general/store_information/name');
         $this->aManifestData['lang']             = Mage::app()->getLocale()->getLocaleCode();

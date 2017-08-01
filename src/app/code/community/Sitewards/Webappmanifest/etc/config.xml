@@ -103,6 +103,7 @@ Web application manifest implementation for Magento 1.x
                         <type>image/png</type>
                     </icon_512>
                 </icons>
+                <display>browser</display>
             </settings>
         </webappmanifest>
     </default>
