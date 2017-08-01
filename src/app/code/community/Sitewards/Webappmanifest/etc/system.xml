@@ -29,14 +29,38 @@ Web application manifest implementation for Magento 1.x
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <base_setting translate="label">
-                            <label>placeholder setting</label>
+                        <author translate="label">
+                            <label>Author</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
-                        </base_setting>
+                        </author>
+                        <short_name translate="label">
+                            <label>Shortname (property Name equals the Store-Name)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </short_name>
+                        <background_color translate="label">
+                            <label>Background color (hex or color name)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </background_color>
+                        <theme_color translate="label">
+                            <label>Theme color (hex or color name)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </theme_color>
                     </fields>
                 </settings>
             </groups>

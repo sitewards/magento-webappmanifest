@@ -43,13 +43,23 @@ Web application manifest implementation for Magento 1.x
             </webappmanifest>
         </routers>
     </frontend>
-    <!-- Todo: Specify the default values for the web app manifest here. At the moment, there are no values, but it
-         will be highly configurable, and storing this XML node here does no harm. -->
+    <adminhtml>
+        <translate>
+            <modules>
+                <sitewards_webappmanifest>
+                    <files>
+                        <default>Sitewards_Webappmanifest.csv</default>
+                    </files>
+                </sitewards_webappmanifest>
+            </modules>
+        </translate>
+    </adminhtml>
     <default>
-        <sitewards_webappmanifest>
-            <export>
-                <batch_size>100</batch_size>
-            </export>
-        </sitewards_webappmanifest>
+        <webappmanifest>
+            <settings>
+                <author>Magento</author>
+                <short_name>Shop</short_name>
+            </settings>
+        </webappmanifest>
     </default>
 </config>
