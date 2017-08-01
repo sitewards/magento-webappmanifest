@@ -31,6 +31,7 @@ Web application manifest implementation for Magento 1.x
                     <fields>
                         <author translate="label">
                             <label>Author</label>
+                            <comment><![CDATA[The entity responsible for creating the store]]></comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
@@ -38,7 +39,8 @@ Web application manifest implementation for Magento 1.x
                             <show_in_store>0</show_in_store>
                         </author>
                         <short_name translate="label">
-                            <label>Shortname (property Name equals the Store-Name)</label>
+                            <label>Shortname</label>
+                            <comment><![CDATA[Please note, the property "name" is the store name.]]></comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
@@ -46,7 +48,8 @@ Web application manifest implementation for Magento 1.x
                             <show_in_store>0</show_in_store>
                         </short_name>
                         <background_color translate="label">
-                            <label>Background color (hex or color name)</label>
+                            <label>Background color</label>
+                            <comment><![CDATA[The colour can be of the hex form (#ffffff) or a HTML color (pink)]]></comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
@@ -55,6 +58,7 @@ Web application manifest implementation for Magento 1.x
                         </background_color>
                         <theme_color translate="label">
                             <label>Theme color (hex or color name)</label>
+                            <comment><![CDATA[The colour can be of the hex form (#ffffff) or a HTML color (pink)]]></comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
