@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Web application manifest implementation for Magento 1.x
+
+@category    Sitewards
+@package     Sitewards_Webappmanifest
+@copyright   Copyright (c) Sitewards GmbH (http://www.sitewards.com)
+@contact     mail@sitewards.com
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addLinkRel">
+                <rel>manifest</rel>
+                <href>/manifest.json</href>
+            </action>
+        </reference>
+    </default>
+</layout>
