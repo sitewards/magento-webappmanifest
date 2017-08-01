@@ -59,6 +59,7 @@ Web application manifest implementation for Magento 1.x
             <settings>
                 <author>Magento</author>
                 <short_name>Shop</short_name>
+                <display>browser</display>
             </settings>
         </webappmanifest>
     </default>
