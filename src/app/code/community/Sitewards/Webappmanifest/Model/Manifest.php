@@ -22,6 +22,14 @@ class Sitewards_Webappmanifest_Model_Manifest extends Mage_Core_Model_Abstract i
         $this->aManifestData['manifest_version'] = '2';
         $this->aManifestData['start_url']        = '/';
 
+        /** @var Sitewards_Webappmanifest_Model_Icons $oIconModel */
+        $oIconModel = Mage::getModel('sitewards_webappmanifest/icons');
+        $aIcons     = $oIconModel->getIconArray();
+
+        if (!empty($aIcons)) {
+            $this->aManifestData['icons'] = $aIcons;
+        }
+
         $this->loadConfigurableOptions();
     }
 

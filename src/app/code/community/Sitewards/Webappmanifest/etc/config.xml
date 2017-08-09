@@ -56,53 +56,14 @@ Web application manifest implementation for Magento 1.x
     </adminhtml>
     <default>
         <webappmanifest>
+            <icon>
+                <name>icon.png</name>
+            </icon>
             <settings>
                 <author>Magento</author>
                 <short_name>Shop</short_name>
                 <background_color>#ffffff</background_color>
                 <theme_color>#f46f25</theme_color>
-                <icons>
-                    <icon_72>
-                        <src>skin/frontend/base/default/images/sitewards/webappmanifest/icons/icon-72x72.png</src>
-                        <sizes>72x72</sizes>
-                        <type>image/png</type>
-                    </icon_72>
-                    <icon_96>
-                        <src>skin/frontend/base/default/images/sitewards/webappmanifest/icons/icon-96x96.png</src>
-                        <sizes>96x96</sizes>
-                        <type>image/png</type>
-                    </icon_96>
-                    <icon_128>
-                        <src>skin/frontend/base/default/images/sitewards/webappmanifest/icons/icon-128x128.png</src>
-                        <sizes>128x128</sizes>
-                        <type>image/png</type>
-                    </icon_128>
-                    <icon_144>
-                        <src>skin/frontend/base/default/images/sitewards/webappmanifest/icons/icon-144x144.png</src>
-                        <sizes>144x144</sizes>
-                        <type>image/png</type>
-                    </icon_144>
-                    <icon_152>
-                        <src>skin/frontend/base/default/images/sitewards/webappmanifest/icons/icon-152x152.png</src>
-                        <sizes>152x152</sizes>
-                        <type>image/png</type>
-                    </icon_152>
-                    <icon_192>
-                        <src>skin/frontend/base/default/images/sitewards/webappmanifest/icons/icon-192x192.png</src>
-                        <sizes>192x192</sizes>
-                        <type>image/png</type>
-                    </icon_192>
-                    <icon_384>
-                        <src>skin/frontend/base/default/images/sitewards/webappmanifest/icons/icon-384x384.png</src>
-                        <sizes>384x384</sizes>
-                        <type>image/png</type>
-                    </icon_384>
-                    <icon_512>
-                        <src>skin/frontend/base/default/images/sitewards/webappmanifest/icons/icon-512x512.png</src>
-                        <sizes>512x512</sizes>
-                        <type>image/png</type>
-                    </icon_512>
-                </icons>
                 <display>standalone</display>
             </settings>
         </webappmanifest>
