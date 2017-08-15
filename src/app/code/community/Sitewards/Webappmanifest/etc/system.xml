@@ -57,18 +57,6 @@ Web application manifest implementation for Magento 1.x
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
                         </display>
-                        <logo translate="label">
-                            <label>Logo</label>
-                            <comment><![CDATA[An image of the type "jpg", "png" or "gif" at least 512px large to be used as a logo]]></comment>
-                            <frontend_type>image</frontend_type>
-                            <backend_model>adminhtml/system_config_backend_image</backend_model>
-                            <upload_dir config="system/filesystem/media" scope_info="1">manifest</upload_dir>
-                            <base_url type="media" scope_info="1">manifest</base_url>
-                            <sort_order>1</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </logo>
                         <background_color translate="label">
                             <label>Background color</label>
                             <comment><![CDATA[The colour can be of the hex form (#ffffff) or a HTML color (pink)]]></comment>
@@ -89,6 +77,26 @@ Web application manifest implementation for Magento 1.x
                         </theme_color>
                     </fields>
                 </settings>
+                <icon translate="label">
+                    <label>Sitewards WebappManifest Icon</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <logo translate="label">
+                            <label>Logo</label>
+                            <comment><![CDATA[An image of the type "jpg", "png" or "gif" at least 512px large to be used as a logo]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">manifest</upload_dir>
+                            <base_url type="media" scope_info="1">manifest</base_url>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </logo>
+                    </fields>
+                </icon>
             </groups>
         </webappmanifest>
     </sections>
