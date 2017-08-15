@@ -8,7 +8,7 @@
 class Sitewards_Webappmanifest_Model_Icons
 {
     const S_IMAGE_TYPE       = 'image/png';
-    const S_ICON_CONFIG_PATH = 'webappmanifest/icon/path';
+    const S_ICON_CONFIG_PATH = 'webappmanifest/icon/logo';
 
     /**
      * @var array $aManifestIconSizes
@@ -40,18 +40,11 @@ class Sitewards_Webappmanifest_Model_Icons
      *
      * @return string
      */
-    private function getResizedImageUrl($sFileName, $sSize)
+    private function getResizedImageUrl($sFileName, $sSize, $sScope)
     {
-        $sScope        = Mage::getSingleton('adminhtml/config_data')->getStore();
-        $sDefaultScope = Mage::app()->getDefaultStoreView()->getCode();
         $sStoragePath  = $this->getStoragePath($sScope);
 
-        // check if we have a image on the current scope, if not try default
         $sBasePath = $sStoragePath . $sFileName;
-        if (!file_exists($sBasePath)) {
-            $sStoragePath = $this->getStoragePath($sDefaultScope);
-            $sBasePath    = $sStoragePath . $sFileName;
-        }
 
         $sNewPath = $sStoragePath . $sSize . 'x' . $sSize . '_' . $sFileName;
         if (file_exists($sBasePath) && is_file($sBasePath) && !file_exists($sNewPath)) {
@@ -63,7 +56,7 @@ class Sitewards_Webappmanifest_Model_Icons
             $oImageObj->save($sNewPath);
         }
 
-        return $sNewPath;
+        return Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'manifest' . DS . $sScope . DS . $sSize . 'x' . $sSize . '_' . $sFileName;
     }
 
     /**
@@ -71,7 +64,14 @@ class Sitewards_Webappmanifest_Model_Icons
      */
     public function getIconArray()
     {
-        $sFileName = Mage::getStoreConfig(self::S_ICON_CONFIG_PATH);
+        /**
+         * @var array<string,string> $aFilePath scope,filename
+         */
+        $aFilePath = explode('/', Mage::getStoreConfig(self::S_ICON_CONFIG_PATH));
+
+        $sScope    = $aFilePath[0];
+        $sFileName = $aFilePath[1];
+
         $aIcons    = [];
 
         if (empty($sFileName)) {
@@ -80,7 +80,7 @@ class Sitewards_Webappmanifest_Model_Icons
 
         foreach ($this->aManifestIconSizes as $iIconSize) {
             $aIcons[] = [
-                'src'   => $this->getResizedImageUrl($sFileName, $iIconSize),
+                'src'   => $this->getResizedImageUrl($sFileName, $iIconSize, $sScope),
                 'sizes' => $iIconSize . 'x' . $iIconSize,
                 'type'  => self::S_IMAGE_TYPE,
             ];
